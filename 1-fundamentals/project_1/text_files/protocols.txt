@@ -1,0 +1,109 @@
+FTP:connection oriented file transfer protocol
+FTP (definition-7 words or less):file transfer
+SSH:secure shell
+SSH (definition-7 words or less):secure communications between computers
+SFTP:secure file transfer protocol
+SFTP port:22
+SFTP (definition-7 words or less):encrypted file transfer using ssh
+Telnet:unencrypted control of remote computers
+SMTP:simple mail transfer protocol
+SMTP (definition-7 words or less):send mail
+DNS:domain name system
+DNS (definition-7 words or less):resolves hostnames with IP addresses
+DHCP:dynamic host configuration protocol
+DHCP (definition-7 words or less):assigns IP addresses to hosts
+TFTP:trivial file transfer protocol
+TFTP (definition-7 words or less):connectionless file transfer protocol
+POP3:post office protocol
+POP3 (send or receive mail):receive mail
+POP3 (definition-7 words or less):downloads email erases from server
+NTP:network time protocol
+NTP (definition-7 words or less):synchronizes computer clocks
+IMAP4:internet message protocol
+IMAP4 (send or receive mail):receive mail
+IMAP4 (definition-7 words or less):access email over the service
+SNMP:simple network management protocol
+SNMP (definition-7 words or less):monitor and manage network devices
+SNMP (purpose):provide network devices with common language for sharing information with network management system
+LDAP:lighweight directory access protocol
+LDAP (definition-7 words or less):access and query directory services
+HTTPS:hypertext transfer protocol secure
+HTTPS (definition-7 words or less):secure version of http
+SSL:secure sockets layer
+TLS:transport layer security
+TLS (definition-7 words or less):cryptographic protocol for secure online data transfer
+SMB:server message block
+SMB (definition-7 words or less):enables file sharing over a network
+SYSLOG:syslog server
+SYSLOG (definition-7 words or less):log message to syslog server
+SMTPS:simple mail transfer protocol secure
+SMTPS(definition-7 words or less): encrypts email when it is sent
+SMTPS (also known as):smtp over tls
+LDAPS:lightweight directory access protocol over ssl
+LDAPS (definition-7 words or less):ldap over ssl
+IMAP secure:imap over ssl
+POP3 secure:pop3 over ssl
+RDP:remote desktop protocol
+RDP (definition-7 words or less):connect to another computer and run programs
+SIP:session initiation protocol
+SIP (definition-7 words or less):signaling protocol to construct multimedia communications
+RTP:real-time transport protocol
+RTP (definition-7 words or less):packet formatting standard to deliver audio and video
+MGCP:media gateway control protocol
+MGCP (definition-7 words or less):session management during multimedia conference
+## NETWORK Layer / Internet layer ##:ok
+IP:internet protocol
+ICMP:internet control message protocol
+ICMP (definition-7 words or less):diagnose network communication issues
+ICMP (types):destination-unreachable buffer-full hops ping traceroute
+IGMP:internet group management protocol
+IGMP (definition-7 words or less):managing ip multicast sessions
+ARP:address resolution protocol
+ARP (definition-7 words or less):finds mac from known ip 
+RARP:reverse address resolution protocol
+RARP (definition-7 words or less):finds ip from known mac
+GRE:generic routing encapsulation
+GRE (definition-7 words or less):tunneling protocol that encapsulates protocols inside ip tunnel
+GRE (2 examples):eigrp opsf
+IPsec:internet protocol security
+IPsec(definition-7 words or less):provides secure method for tunneling data across ip network
+IPsec (2 primary security protocols used): ah esp
+AH:authentication header
+AH (definition-7 words or less):authenticates data for ip packet header
+ESP:encapsulating security payload
+ESP (definition-7 words or less):confidentiality authentication connectionless integrity
+## Organizations ##:ok
+SONET:synchronous optical network
+SONET (definition-7 words or less):north american standard for synchronous data transmission over optical fibers
+ICANN:internet corporation for assigned names and numbers
+ICANN (definition-7 words or less):assigns ip addresses
+IEEE:institute of electrical and electronics engineers
+IEEE (definition-7 words or less):ethernet standards
+IANA:internet assigned numbers authority
+IANA (definition-7 words or less):assigns values for well known port numbers
+IETF:internet engineering task force
+IETF (definition-7 words or less):develops standards for internet technologies
+ISO:international organization for standardization
+ISO (definition-7 words or less):created the osi model
+OSI:open systems interconnection model
+## ROUTING Protocols ##:ok
+RIP:routing information protocol
+RIP (definition-7 words or less):distance vector routing protocol
+RIP [what does it do]:determines best path based on hop count
+RIP [max hop count]:15
+RIPv2:routing information protocol version 2
+RIPv2 (definition-7 words or less):distance vector routing protocol
+RIPv2 [what does it do]:determines best path based on hop count
+EIGRP:enhanced interior gateway routing protocol
+EIGRP [distance vector, link state or hybrid]:hybrid routing protocol
+EIGRP [what does it do]:distance vector updates plus synchronizes routing tables
+BGP:border gateway protocol
+BGP (definition-7 words or less):sophisticated algorithm to determine best path
+OPSF:open path shortest first
+OPSF [distance vector or link state]:link state
+OPSF (definition-7 words or less):learn and maintain more information about internetwork than distance vector
+## Not sure where these belong ##:ok
+LACP:link aggregation control protocol
+LACP (definition):dynamically coordinates communication between hosts on aggregated connections
+CARP:common address redundancy protocol
+CARP (definition):pools of computers to share ip addresses

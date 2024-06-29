@@ -1,0 +1,36 @@
+#NETWORK SEGMENTATION#:ok
+network segmentation benefit 1:enhance security
+network segmentation benefit 2:improve performance
+network segmentation benefit 3:simplify troubleshooting
+network segmentation (2 parts): subnetting and vlan
+VLAN (acronym):virtual local area network
+VLAN [what is it]:group of ports on one or more switches
+VLAN [why]:limit traffic to smaller broadcast domains
+switch adds a small field called a [what] to Ethernet header:tag
+what does the tag do:identifies port messages arrive at
+port tagging is indentified in what IEEE standard:802.1q
+IEEE 802.1q is also called:dot1q
+after message arrives at switch tag is stripped from frame (true/false):true
+## VLAN Trunks ##:ok
+access port:connects switch to host
+trunk port:connects switch to networking device
+1 broadcast domain == 1 VLAN == 1 subnet (true/false):true
+how do VLAN clients receive subnet addressing: dhcp relay agent
+### Types of VLANS ###:
+preconfigured on a switch, includes all the switch's ports:default vlan
+receives all untagged frames from untagged ports:native vlan
+carries user-generated traffic: data vlan
+supports voip traffic:voice vlan
+provide administrative access:management vlan
+partions a VLAN broadcast domain into subdomains:private vlan
+host on each port is isolated from hosts in sam and other secondary vlans:isloated vlan
+hosts within the same community can communicate with each other but not other hosts in secondary vlans:community vlan
+### VLAN Troubleshooting and Security ###:ok
+issue #1:incorrect vlan assignment
+issue #2:incorrect port mode
+issue #3:vlan isolation
+issue #4:vlan hopping
+(Approach 1 vlan hopping)attacker generates transmission that appear to belong to a protected vlan:vlan hopping
+(Approach 2 vlan hopping)hacker stacks vlan tags in ethernet frame:double tagging
+attacker connects to a switch and makes connection look like it is trunk line:switch spoofing
+

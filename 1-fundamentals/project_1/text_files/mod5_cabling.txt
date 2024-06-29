@@ -1,0 +1,158 @@
+Number of times per second that an electrical signal can change states: Frequency
+Amount of data theoretically transmit during given time period:Bandwidth
+Payload:Throughput
+Effective Data Rate:Throughput
+Number of data bits that are actually received across a connection each second:Throughput
+Sending data over an analog signal:Modulation
+Converting data into a digital signal for transmission:Encoding
+Can degrade or distort a signal:Noise
+Measured in dB loss:Noise
+emi: electromagnetic interference
+Signal traveling on one wire or cable infringes on the signal traveling over an adjacent wire:Crosstalk
+Loss of signal strength as it travels away from it source:Attenuation
+Regenerate digital signal in its original form without the noise:Repeater
+Delay between when data leaves a source and when it arrives at destination:Latency
+Length of cable, type of device, cable limitations, processing delays, collisions with other messages:Latency
+most common way to measure latency:round trip time
+when packets arrive out of order due to latency:Jitter
+when packets arrive out of order due to latency:packet delay variation
+signal travels both directions over medium simultaneously:full-duplex
+signal travel both directions, but only one direction at a time:half-duplex
+signal travels in only one direction:simplex
+multiple signals to travel simultaneoulsy over one medium:multiplexing
+time division multiplexing:time division multiplexing
+divides channel into multiple intervals of time slots:time division multiplexing
+time slots are reserved for their designated nodes:time division multiplexing
+does not allow multiple signals on line at exact same time:time division multiplexing
+statistical time division multiplexing:statistical time division multiplexing
+assigns time slots to nodes based on priority:statistical time division multiplexing
+does not allow multiple signals on line at exact same time:time division multiplexing
+frequency division multiplexing:frequency division multiplexing
+assigns different frequency to create multiple frequency bands:frequency division multiplexing
+signals are modulated into different frequencies and multiplexed to travel simultaneously over single channel:frequency division multiplexing
+allows multiple signals on line at same time:frequency division multiplexing
+fiber, wavelength division multiplexing:wavelength division multiplexing
+fiber, carry multiple light signals simultaneously:wavelength division multiplexing
+fiber, divides light beam into different wavelengths on single fiber:wavelength division multiplexing
+fiber, one direction at a time:wavelength division multiplexing
+fiber, supports full-duplex light transmission in both directions at same time:bidrectional wavelength division multiplexing
+fiber, dense wavelength divsion multiplexing:dense wavelength division multiplexing
+fiber, increases number of channels provided by normal wdm:dense wavelength division multiplexing
+fiber, increase number of channels to 80 - 320 channels:dense wavelength division multiplexing
+fiber, used on high-bandwidth or long distance WAN links:dense wavelength division multiplexing
+fiber, coarse division multiplexing:coarse division multiplexing
+fiber, lowers cost by spacing frequency bands wider apart to allow for cheaper transceiver equipment:coarse division multiplexing
+carries eletrical signal:metal core
+protects core from metal shielding:insulator
+protects the signal from noise and is ground for the signal:metal shielding
+protects cable from physical damage:sheath or jacket
+measure of opposition to current flow:impedance
+awg:american wire gage
+larger awg number, smaller diameter of core wire:awg
+better power transfer(higher/lower impedance):lower impedance
+less attentuation of data signal over distance(higher/lower impedance):higher impedance
+more effective for transmitting data(ohms):50 ohms
+more effective for receiving devices(ohms):75 ohms
+cable, cheaper, but more attentuation than rg-6:rg-59
+cable, deliver broadband cable internet and cable tv:rg-6
+attaches to cable so center of cable extends into center of connector:f-connector
+crimped, compressed or twisted onto coaxial cable:bnc connector
+2 cores instead of one:twinax
+half-duplex to transmit data:twinax
+supporting much higher throughput than coax:twinax
+inexpensive for short, high-speed connections:twinax
+cable designed to handle high-speed connections at very short distances:direct attach copper
+direct attach coppert aka:twinax
+limited in distance:twinax
+cheaper than fiber:twinax
+consumes less power than fiber:twinax
+provides excellent protection from interference:twinax
+some resistance to damage from physical handling, 26-28 AWG:twinax
+factory terminated, length fixed, preinstalled transceiver on each end:twinax
+color-coded pairs of copper wires:twisted-pair
+diameter 0.4 - 0.8mm:twisted-pair
+number of twists per foot:twist-ratio
+more twists per foot, more resistant the pair will be to crosstalk:twist-ratio
+(utp/stp?) effective with level and type of environmental noise:stp
+(utp/stp?) effective with thickness and material used for shield:stp
+(utp/stp?) effective with grounding mechanism:stp
+(utp/stp?) effective with symmetry and consistency of the shielding:stp
+(utp/stp?) one or more insulated wire pairs encased in plastic sheath:utp
+(utp/stp?) does not contain additional metal shielding for twisted pairs:utp
+fire-retardant jacket, for use in ceiling spaces with air flow:plenum grade cable
+fire-retardant jacket, for use in ceiling spaces NOT designed for air flow:riser rated cable
+mdi:medium dependent interface
+mdi-x:medium dependent interface crossover
+loopback plug verifies cable and network port are good:loopback adapter
+cable which allows signal to pass straight through:straight-through cable
+straight-through cable pin1:pin1
+straight-through cable pin2:pin2
+straight-through cable pin3:pin3
+straight-through cable pin4:pin4
+straight-through cable pin5:pin5
+straight-through cable pin6:pin6
+straight-through cable pin7:pin7
+straight-through cable pin8:pin8
+cable which has transmit and receive wires reversed, connect like devices:crossover cable
+fast ethernet (2 or 4 cross pairs?):2
+crossover cable pin1:pin3
+crossover cable pin2:pin6
+crossover cable pin3:pin1
+crossover cable pin4:pin4
+crossover cable pin5:pin5
+crossover cable pin6:pin2
+crossover cable pin7:pin7
+crossover cable pin8:pin8
+gigabit ethernet (2 or 4 cross pairs?):4
+crossover cable (gigabit) pin1:pin3
+crossover cable (gigabit) pin2:pin6
+crossover cable (gigabit) pin3:pin1
+crossover cable (gigabit) pin4:pin7
+crossover cable (gigabit) pin5:pin8
+crossover cable (gigabit) pin6:pin2
+crossover cable (gigabit) pin7:pin4
+crossover cable (gigabit) pin8:pin5
+reverses all wires without regard to how they are paired:rollover cable
+rollover cable pin1:pin8
+rollover cable pin2:pin7
+rollover cable pin3:pin6
+rollover cable pin4:pin5
+rollover cable pin5:pin4
+rollover cable pin6:pin3
+rollover cable pin7:pin2
+rollover cable pin8:pin1
+another name for rollover cable:console cable
+smf:single mode fiber
+8 to 10 microns in diameter:single mode fiber
+LASER generated light travels single path over the core:single mode fiber
+single mode fiber definition:laser generated light travels single path over the core
+accommodate highest bandwidths and longest distances:single mode fiber
+internet backbone depends on:single mode fiber
+mmf:multimode fiber
+large diameter, 50-62.5 microns:multimode fiber
+greater attentuation that smf:multimode fiber
+not suited for long distances(few kilometers):multimode fiber
+less expensive than smf:multimode fiber
+used to connect routers, switches, servers on backbone of network:multimode fiber
+fiber connectors:fiber connectors
+(smf/mmf?) connectors are classfied by number of fibers they connect:multimode fiber
+(smf/mmf?) connectors are classifed by size and shape of ferrule:single mode fiber
+(smf/mmf?) connectors designed to reduce back reflection:single mode fiber
+extended tip of connector that makes contact with receptacle jack:ferrule
+return of light signal back into the fiber:back reflection
+4 main fiber connector types: sc st lc mt-rj
+subscriber connector:sc
+sc:subscriber connector
+straight tip:st
+st:straight tip
+straight tip connector support full-duplex (yes/no):no
+local connector(more common):lc
+lc(more common):local connector
+local connector support full-duplex (yes/no):yes
+mechanical transfer registered jack(more common):mt-rj
+mt-rj(more common):mechanical transfer registered jack
+mt-rj support full-duplex (yes/no):yes
+fiber type mismatch:fiber cable problem
+wavelength mismatch:fiber cable problem
+dirty connectors:fiber cable problem
+link loss:fiber cable problem

@@ -1,0 +1,110 @@
+characteristics of ____ _____: wireless networks
+rfid:radio frequency identification
+electromagnectic fields store data on a small chip, with antenna: radio frequency identification
+____ commonly used for inventory management:radio frequency identification
+nfc:near field communication
+___ ___ ____ form of RFID:near field communication
+___ ___ ___ transfers data wirelessly over short distances:near field communication
+tiny antenna embedded in device sends its radio signal at fixed frequency:near field communication
+___ ___ ___ commonly used for cashless payments:near field communication
+Smart home protocol provides 2 basic functions:z-wave
+z-wave definition:smart home protocol provides 2 basic functions
+signaling to manage wireless connections:z-wave function 1
+z-wave function 1:signaling to manage wireless connections
+control to transmit data and commands between devices:z-wave function 2
+z-wave function 2:control to transmit data and commands between devices
+low-powered battery conserving wireless technology:zigbee
+zigbee: low-powered battery conserving wireless technology
+ideal for use in industrial, scientfic and medical:zigbee
+designed to handle small amounts of data:zigbee
+___ devices require close proximity to form a connection:bluetooth
+___ unites separate entities under one communications standard:bluetooth
+based on ANT protocol:ant+
+ANT+:based on ANT protocol
+ad hoc wireless protocol operating at 2.4GHz:ant+
+IR:infrared
+___ useful to collect data through various sensors:infrared
+___ commonly used in remote controls:infrared
+___ longer wavelengths than red light:infrared
+___ requires unobstructed line of sight:infrared
+technology to use frequencies within its band to avoid interference:channel management
+channel management: technology to use frequencies within its band to avoid interference
+2 types of channel management technologies: fhss/dsss
+frequency hopping spread spectrum:fhss
+fhss definition:frequency hopping spread spectrum
+___ ___ ___ ___ short burst of data is transmitted on frequency within band: frequency hopping spread spectrum
+___ ___ ___ ___ next burst goes to next frequency in the sequence:frequency hopping spread spectrum
+direct sequence spread spectrum:dsss
+dsss:direct sequence spread spectrum
+data streams are divided and coded into small chunks:direct sequence spread spectrum
+chunks are spread over all available frequencies at same time:direct sequence spread spectrum
+process of dividing and encoding data:chipping
+relative strength over 3-D area of all electromagnecti energy antenna sends/receives:radiation pattern
+___ ___ issues wireless signals along a single direction:directional antenna
+___ ___ issues and receives wireless signals with equal strength:omnidirectional antenna
+effective isotropic radiated power:eirp
+formula to measure antenna performance:eirp
+received signal strength indicator:rssi
+___ measures in dBm the power of the signal on the receiver's end:rssi
+___ way in which a wave travels from one point to another:propogation
+___ farther signal move away, more in weakens:attentuation
+___ as signals run into obstacles, energy fades:fading
+___ electromagnetic waves in atmosphere cause interference:interference
+___ waves direction, speed and wavelength are altered as it travels:refraction
+___ when waves encounter obstacles and bounce back:reflection
+___ when wireless signal encounters object with smaller dimensions it scatters:scattering
+___ wireless signal split into secondary waves:diffraction
+WLAN operate at what layers of OSI model(enter number):1/2
+NEXT SECTION, 802.11 Innovations increase speed and reliability (enter ok):ok
+Bonding 2 adjacent 20MHz channels:channel bonding
+(true/false) bonding 2 20MHz channels more than doubles bandwidth?:true
+(true/false) wireless signals propagate in multipath fashion?:true
+(true/false) multiple signals do not arrive at receiver at same time?:true
+MIMO:multiple input multiple output
+How does MIMO work:adjust phase or amplitude of signals from each antenna
+(true/false) MIMO improves transmission:true
+multiuser multiple input multiple output:MU-MIMO
+MU-MIMO:multiuser multiple input multiple output
+multiple atennas to service multiple clients simultaneously:MU-MIMO
+MU-MIMO (definition): multiple atennas to service multiple clients simultaneously
+Orthagonal Frequency Division Multiple Access:OFDMA
+OFDMA:orthagonal frequency division multiple access
+(true/false) OFDMA supports more efficient multiuser functionality:true
+OFDMA (definition):supports more efficient multiuser functionality
+combine multiple data frames into one larger frame: frame aggregation
+frame aggregation:combine multiple data frames into one larger frame
+(true/false) Frame Aggregation reduces number of messages to negotiate:true
+CSMA/CA:carrier sense multiple access with collision avoidance
+(true/false) CSMA/CA minimizes collision but cannot detect collision:true
+independent basic service set:ibss
+ibss:independent basic service set
+(true/false) IBSS uses ad hoc topology:true
+small number of nodes closely positioned to each other:ibss
+basic service set:bss
+bss:basic service set
+(true/false) BSS uses infrastructure topology:true
+group of nodes share access point:bss
+extended service set:ess
+ess:extended service set
+(true/false) ESS uses mesh topology:true
+several access points work as peer devices on same network:ess
+WiFi Network Security (type ok):ok
+wired equivalent privacy:wep
+(true/false) WEP is considered legacy due to lack of security:true
+why is wep insecure:same network key and key is static
+TKIP:temporal key integrity protocol
+(true/false) TKIP for use with legacy WEP-based devices:true
+(true/false) TKIP deprecated in favor of AES:true
+wifi protected access:wpa
+(true/false)wpa is more secure than wep:true
+(true/false) wpa dynamically assigns every transmission its own key:true
+wifi protected access version 2:wpa2
+(true/false) WPA2 uses CCMP to improve wireless security:true
+AES:advanced encryption standard
+WPA-PSK (PSK stand for):pre-shared key
+Remote Authentication Dial-In User Service:radius
+RADIUS:remote athentication dial-in user service
+(true/false) RADIUS server is a secure authentication server?:true
+EAP:extensible authentication protocol
+(true/false) supplicant, authenticator, authentication server are 3 main entities of EAP:true
+what are the three main entities of EAP:supplicant authenticator authentication server

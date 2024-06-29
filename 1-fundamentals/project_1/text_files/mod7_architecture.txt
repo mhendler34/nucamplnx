@@ -1,0 +1,171 @@
+# NETWORK ARCHITECTURE(type ok)#:ok
+## Physical Architecture(type ok)##:ok
+Network Abstraction:separation of decision making from hardware
+### Managed Switches ###:ok
+Unmananged Switch [characteristic-1]:plug and play
+Unmananged Switch [characteristic-2]:minimal configuration
+Unmananged Switch [characteristic-3]:no ip address
+Mananged Switch [characteristic-1]:cli configuration
+Mananged Switch [characteristic-2]:ip address
+Layer 3 Switch:interpret layer 3 data
+Layer 4 Switch:interpret layer 4-7 data
+### Switch Path Management ###:ok
+What does a layer 2 switch do:manages network traffic on LAN
+broadcast storm (definition):multiple switches flooding network with broadcast frames
+storm control (definition):protects against flooding attacks
+STP (acronym):spanning tree protocol
+STP [what does it do]:prevents traffic loops
+STP Process [Step 1]: selects root bridge which provides basis for path calculation
+STP Process [Step 2]: examines all paths
+least cost path (definition):most efficient path
+STP Process [Step 3]:disables links that are not part of shortest path
+BPDU:Bridge Protocol Data Units
+STP information is transmitted between switches via:BPDU
+Security Precaution on STP-enabled interface:bpdu guard
+bpdu guard (definition):block bpdu on any port serving network hosts
+Security Precaution on STP-enabled interface:bpdu filter 
+bpdu filter:disables STP on specific ports
+Security Precaution on STP-enabled interface:root guard
+root guard:prevents other switches from becoming root bridge
+3 newer technologies to replace STP:rstp, trill, spb
+### Switch Port Security ###:ok
+first layer of defense:disable ports until needed
+another layer of defense:mac filtering (switchport)
+### Hierarchical Design ###:ok
+hierarchical design for switches is known as:three-tiered architecture
+tier 1:access layer or edge layer
+access layer or edge layer (definition):workgroup switches connected hosts
+tier 2:distribution layer or aggregation layer
+distribution layer or aggregation layer (Definition):redundant mesh of connections between multilayer switches and routers
+tier 3:core layer
+core layer (definition):multilayer switches or routers that support network backbone
+east-west traffic (definition):traffic within local network segment
+north-south traffic (definition):traffic which leaves local network segment
+newer networks collapse core and distribution layer, what is this model called:spine and leaf architecture
+what makes up the spine:spine switches on the backbone connect in mesh topology with all leaf switches but not each other
+what makes up the leaf:leaf switches connect with host devices
+leaf switches often reside in the same rack as the servers they support (true/false):true
+ToR swtching:top of rack
+EoR switching:end of row
+spine and leaf benefits over 3-tier #1:improved redundancy
+spine and leaf benefits over 3-tier #4:improved scalability
+spine and leaf benefits over 3-tier #3:increased perfomance
+spine and leaf benefits over 3-tier #5:increased security
+spine and leaf benefits over 3-tier #2:decreased latency
+spine and leaf benefits over 3-tier #6:decreased expense
+### Software-Defined Networking (SDN) ###:ok
+SDN (acronym):software defined networking
+SDN centralized (true/false):true
+SDN [what does it do?]:handles decision making at software level
+SDN Controller:integrates configuration and management into one cohesive system
+SDN relies on what type of abstraction:disaggregation
+SDN [how does it do it?]:abstracts the functions of network devices into different layer or planes
+Infrastructure plane or data plane:physical or virtual network devices
+control plane:network brain
+application plane:sdn controller communicates with network applications using apis
+management plane:remotely manage network devices
+### Storage Area Network ###:ok
+SAN (acronym):storage area network
+SAN are extremely fault tolerant (true/false):true
+SAN are extremely fast (true/false):true
+SAN [what is it]:distinct network of storage devices
+RAID (acronym):redundant array of independent disks
+multipathing:multiple connections in place to handle connection failure
+To maximize throughput SANS rely on following technologies (type ok):ok
+FC:fibre channel
+FC [what is it]:san architecture that runs separately from ethernet to maximize speed
+FcoE:fibre channel over ethernet
+FCoE [what is it]: san archiecture that allows fc to travel over ethernet
+FCoe [how does it do it]: fc frame encapsulated into fcoe frame
+iSCSI:internet scsi
+iSCSI drawback:less throughput
+ib:infiniband
+ib drawback:need specialized equipment
+## VIRTUAL ARCHITECURE ##:ok
+hypervisor [what is it?]:software that creates and manages vm
+hypervisor type 1:installs on a computer before any os
+hypervisor type 2:installs as application on host os
+### Network Connection Types ###:ok
+every VM has it own virtual network adapter or vNIC(true/false):true
+vNIC operate at data link layer (true/false):true
+vNIC are aiggned a MAC address (true/false):true
+vswitch is logically defined device that operates at the data link layer (true/false):true
+what is bridged mode:vnic access physical network using the host machines nic
+what is bridged mode in other words:virtual interface and physical interface are bridged
+what is NAT mode:vnic relies on host machine to act as a network address translation device
+what is NAT mode in other words:vm obtains ip addressing from host rather than router on physical network
+what is host only mode:vms on one host can communicate with each other but not with any nodes beyond the host
+host only modes can create isolated virtual networks (true/false):true
+host only modes are appropriate for test networks (true/false):true
+### Advantages of virtualization ###:ok
+advantage 1:efficient use of resources
+advantage 2:cost and enery savings
+advantage 3:fault and threat isolation
+advantage 4:simple backups and recovery
+### Disadvantages of virtualization ###:ok
+disadvantage 1:compromised performance
+disadvantage 2:increased complexity
+disadvantage 3:increased licensing costs
+disadvantage 4:single point of failure
+Network Functions Virtualization [what is it]:merging physical and virtual network architecture
+## CLOUD ARCHITECTURE ##:ok
+Cloud Service Features according to National Institute of Standards (type ok):ok
+cloud feature 1:on demand service
+cloud feature 2:broad network access
+cloud feature 3:resource pooling
+cloud feature 4:measured service
+cloud feature 5:rapid elasticity
+CSP (acronym):cloud services provider
+### CLOUD SERVICE MODELS ###(ok):ok
+on-premises:everything is located and managed at your location
+IaaS (acronym):infrastructure as a service
+IaaS [what does it do]:infrastucture services provided virtually
+PaaS (acronym):platform as a service
+PaaS [what does it do]:provides multiple platforms inlcuding os and runtime libraries
+what are containers?:micro-versions of servers that provide only the resources needed to run an application
+SaaS (acronym):software as a service
+SaaS [what does it do]:applications are provided through online user interface
+XaaS (acronym):anything as a service
+### Cloud Deployment Models ###:ok
+Public Cloud:service provided over the internet
+Private Cloud:service on organizations own servers
+Community Cloud:shared service between multiple organizations
+Hybrid Cloud:combination of public and private cloud resources
+Multicloud:combination of other service models in a single deployment
+Mutlicloud is the most common service model (true/false):true
+### Orchestration and Automation ###:ok
+IaC:infrastructure as code
+IaC [what is it]:scripting to manage cloud resources
+### Connectivity and Security ###:ok
+drawback to using the cloud, 1:isp outages
+drawback to using the cloud, 2:bandwidth limitations
+drawback to using the cloud, 3:cloud breach
+drawback to using the cloud, 4:unauthorized access
+## NETWORK AVAILABILITY ##:ok
+availability (definition):refers to the ability to access a resource
+HA (acronym):high availability
+durability (definition):refers to the resources ongoing existence
+reliability (definition):refers to how well a resource functions without errors
+resiliency (definition): refers to the resources ability to recover from errors
+uptime (definition):refers to the length of time your system has been running
+### Fault Tolerance ###:ok
+fault tolerance (definition):the capacity of the system to continue performing despite a malfunction
+failure (definition):deviation from a specified level of system performance
+fault (definition):malfunction of one component of a system
+redundancy (definition):networks designed with two or more of the same item service or connection
+MTBF:mean time between failures
+MTBF (definition):average amount of time before next failure
+MTTR:mean time to repair
+MTTR (definition):average amount of time to repair
+automatic failover:redundant equipment immediately assumes duties of failed equipment
+hot spare:redundant equipment is already installed
+cold spare:redundant equipment is not installed
+### Redundant Links ###:ok
+link aggregation:combination of multiple network interfaces to act as one interface
+link aggregation aka:port aggregation
+link aggregation group (LAG) advantages (type ok):ok
+LAG advantage 1:increased throughput
+LAG advantage 2:automatic failover
+LAG advantage 3:load balancing
+LACP:link aggregation control protocol
+LACP (definition):dynamically coordinates communication between hosts on aggregated connections
